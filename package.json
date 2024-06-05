@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/KthSmallestPrimeFraction/index.ts"
+  "start": "npx nodemon src/CourseSchedule/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
