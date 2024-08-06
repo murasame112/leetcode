@@ -7,7 +7,7 @@ class ListNode {
   }
 }
 
-
+// better answer (floyd's cycle finding algorithm)
 function hasCycle(head: ListNode | null): boolean {
 	if(head == null || head.next == null){
 		return false;
