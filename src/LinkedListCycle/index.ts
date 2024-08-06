@@ -7,6 +7,8 @@ class ListNode {
   }
 }
 
+
+
 // better answer (floyd's cycle finding algorithm)
 function hasCycle(head: ListNode | null): boolean {
 	if(head == null || head.next == null){
@@ -52,6 +54,24 @@ function hasCycle(head: ListNode | null): boolean {
 // }
 
 
+// another way of solving the problem I found interesting and wanted to try:
+// function hasCycle(head: ListNode | null): boolean {
+
+
+// 	while(1){
+		
+// 		if(head == null || head.next == null){
+// 			return false;
+// 		}
+// 		head.val = 'nope' as any;
+// 		head = head?.next;
+// 		if(head.val == 'nope' as any){
+// 			return true;
+// 		}
+// 	}
+// 	return false;
+// }
+
 let head = [3,2,0,-4];
 let pos = 1;
 
@@ -64,7 +84,7 @@ let h2 = new ListNode(head[2], h3);
 let h1 = new ListNode(head[1], h2);
 let h0 = new ListNode(head[0], h1);
 
-h3.next = h1;
+//h3.next = h1;
 
 // let h1 = new ListNode(head[1]);
 // let h0 = new ListNode(head[0], h1);
