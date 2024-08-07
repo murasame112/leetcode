@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/LinkedListCycle/index.ts"
+  "start": "npx nodemon src/RemoveElement/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
