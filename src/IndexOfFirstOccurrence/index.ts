@@ -1,3 +1,21 @@
+// =========== faster solution using slice
+function strStr(haystack: string, needle: string): number {
+
+	for(let i = 0; i < haystack.length - needle.length + 1; i++){ // less loop iterations, because there's no point in checking after there are less letters left than in needle
+		let sliced = haystack.slice(i, i + needle.length);
+		if(sliced === needle){
+			return i;
+		}
+	}
+
+	return -1;
+};
+
+
+// ========= my solution:
+/*
+
+
 function strStr(haystack: string, needle: string): number {
 	let left = 0;
 	let right = 0;
@@ -29,6 +47,8 @@ function strStr(haystack: string, needle: string): number {
 	
 	return index;
 };
+
+*/
 
 const haystack = "mississippi";
 const needle = "issip";
