@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/ValidPalindrome/index.ts"
+  "start": "npx nodemon src/IndexOfFirstOccurrence/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
