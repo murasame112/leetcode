@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/TwoSumII/index.ts"
+  "start": "npx nodemon src/RotateList/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
