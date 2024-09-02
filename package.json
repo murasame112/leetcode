@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/RotateList/index.ts"
+  "start": "npx nodemon src/CompareVersionNumbers/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
