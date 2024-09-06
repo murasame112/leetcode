@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/CompareVersionNumbers/index.ts"
+  "start": "npx nodemon src/ValidTriangleNumber/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
