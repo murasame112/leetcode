@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/ValidTriangleNumber/index.ts"
+  "start": "npx nodemon src/Sqrt(x)/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
