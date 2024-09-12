@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/FindMin/index.ts"
+  "start": "npx nodemon src/LongestSubstringWithoutRepeating/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
