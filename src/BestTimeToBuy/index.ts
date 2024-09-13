@@ -1,17 +1,16 @@
+// third solution, dynamic sliding window 
 function maxProfit(prices: number[]): number {
-	let left = 0;
-	let right = 1;
 	let sum = 0;
-	while (left < prices.length){
+	let minimal = Number.MAX_VALUE;
 
-		if (prices[right] > prices[left]){
-			sum = Math.max(sum, prices[right] - prices[left]);
-		}else{
-			left = right;
+	for(const price of prices){
+		if(price < minimal){
+			minimal = price;
+		}else if (price - minimal > sum){
+			sum = price - minimal;
 		}
-		right++;
 	}
-    return sum;
+	return sum;
 };
 
 // 2 - 6
