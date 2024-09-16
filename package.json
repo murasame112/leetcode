@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/BestTimeToBuy/index.ts"
+  "start": "npx nodemon src/MinimumRecolors/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
