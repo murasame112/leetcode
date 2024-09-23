@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/FindAllAnagramsInString/index.ts"
+  "start": "npx nodemon src/ValidParentheses/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
