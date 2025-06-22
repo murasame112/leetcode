@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/MinStack/index.ts"
+  "start": "npx nodemon src/MergeStringsAlternately/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
