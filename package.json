@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/CanPlaceFlowers/index.ts"
+  "start": "npx nodemon src/ReverseVowels/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
