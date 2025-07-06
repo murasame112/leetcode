@@ -1,4 +1,40 @@
 function reverseWords(s: string): string {
+	s = s.trim();
+	let left = s.length - 1;
+	let right = s.length - 1;
+	let result = '';
+
+	while(left > 0){
+		if(s[left] == ' '){
+			
+			if(s.slice(left, right + 1) != '  '){
+				result += s.slice(left, right + 1).trim();
+				result += ' ';
+			}
+				left--;
+				right = left;
+		}{
+			left--;
+		}
+	}
+	result += s.slice(0, right + 1).trim();
+	result += ' ';
+
+	return result.trim();
+};
+//const s = "the sky is blue";
+//const s = "  hello world  ";
+const s = "a good   example";
+//const s = " asdasd df f";
+//const s = "a";
+//const s = "aa";
+console.log(reverseWords(s));
+
+
+
+/*
+old solution, a lot of unnecessary complications
+function reverseWords(s: string): string {
   let start = s.length - 1;
 	let end = start;
 	let result = '';
@@ -23,11 +59,4 @@ function reverseWords(s: string): string {
 
 	return result.trim();
 };
-//const s = "the sky is blue";
-//const s = "  hello world  ";
-//const s = "a good   example";
-//const s = " asdasd df f";
-//const s = "a";
-const s = "aa";
-console.log(reverseWords(s));
-// https://leetcode.com/problems/reverse-words-in-a-string/?envType=study-plan-v2&envId=leetcode-75
+*/
