@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/ProductExceptSelf/index.ts"
+  "start": "npx nodemon src/StringCompression/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
