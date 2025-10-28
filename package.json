@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/MoveZeroes/index.ts"
+  "start": "npx nodemon src/IsSubsequence/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
