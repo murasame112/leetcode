@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/FindDiffTwoArrays/index.ts"
+  "start": "npx nodemon src/UniqueNumberofOccurances/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
