@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/DetermineIfTwoStringsAreClose/index.ts"
+  "start": "npx nodemon src/EqualRowAndColumnPairs/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
