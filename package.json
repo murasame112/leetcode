@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/RemoveStars/index.ts"
+  "start": "npx nodemon src/AsteroidCollision/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
