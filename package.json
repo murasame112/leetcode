@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/DecodeString/index.ts"
+  "start": "npx nodemon src/NumberofRecentCalls/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
