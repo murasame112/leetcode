@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/ReverseLinkedList/index.ts"
+  "start": "npx nodemon src/DeleteMiddleLinkedList/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
