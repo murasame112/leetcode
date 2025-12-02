@@ -9,27 +9,52 @@ class ListNode {
 
 function pairSum(head: ListNode | null): number {
 	if(head === null) return 0;
-	let max: number = 0;
-	let n = 0;
-	const stack: number[] = [];
-	let current: ListNode | null = head;
-	while(current != null){
-		n++;
-		stack.push(current.val);
-		current = current.next;
+	let max = 0;
+	let first: ListNode | null = head;
+	let second: ListNode | null = head.next;
+	while(second!.next != null){
+		first = first!.next;
+		second = second!.next!.next;
 	}
-	current = head;
-	for(let i = 0; i < (n/2); i++){
-		let topVal = stack.pop();
-		let sum = current!.val + topVal!;
+	
+	let rev = reverseList(first!.next);
+	first!.next = rev;
+
+	first = head;
+	second = rev;
+
+	while(second != null){
+		let sum = first!.val + second.val;
 		if(sum > max){
-			max = sum;
+				max = sum;
 		}
-		current = current!.next;
+		first = first!.next;
+		second = second.next;
 	}
 
   return max;
 };
+
+function reverseList(head: ListNode | null): ListNode | null {
+	if(head === null){
+		return head;
+	}
+	let prev = head;
+	let next = head.next;
+	head.next = null;
+	while(head !== null){
+		prev = head;
+		head = next;
+		if(head == null){
+			return prev;
+		}
+		next = head.next;
+		head.next = prev;
+	}
+
+	return head;
+};
+
 
 
 const l6 = new ListNode(6, null);
