@@ -10,8 +10,32 @@
 }
 
 function leafSimilar(root1: TreeNode | null, root2: TreeNode | null): boolean {
-  return false;
+	if(root1 === null || root2 === null) return false;
+	const left: number[] = getLeafStack(root1);
+	const right: number[] = getLeafStack(root2);
+
+	if(left.length != right.length) return false;
+	while(left.length > 0){
+		if(left.pop() !== right.pop()) return false;
+	}
+
+  return true;
 };
+
+function getLeafStack(root: TreeNode): number[]{
+	const stack: TreeNode[] = [];
+	const result: number[] = [];
+	stack.push(root);
+	while(stack.length > 0){
+		let current = stack.pop();
+		
+		if(current!.right !== null) stack.push(current!.right);
+		if(current!.left !== null) stack.push(current!.left);
+		if(current!.left === null && current!.right === null) result.push(current!.val); 
+	}
+
+	return result;
+}
 
 
 const t8 = new TreeNode(4, null, null);
