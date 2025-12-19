@@ -1,6 +1,6 @@
 {
 	"scripts": {
-  "start": "npx nodemon src/KeysAndRooms/index.ts"
+  "start": "npx nodemon src/PathSumIII/index.ts"
 	},
   "dependencies": {
     "@types/node": "^20.14.2",
