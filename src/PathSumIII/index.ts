@@ -26,21 +26,33 @@ cofamy w górę o 1 poziom, więc zerujemy poziom 2 i dodajemy do niego 8
 2: [12, 9, 8]
 rezultat - 14 wystąpiło 3 razy - linia 16, 19 i 21
 
-1 - najpierw zaimplementować dfs który pilnuje na jakim poziomie jest. do stacka można zapisywać {TreeNode, level}
 */
+
+type LeveledNode = {
+	node: TreeNode;
+	level: number;
+}
 function pathSum(root: TreeNode | null, targetSum: number): number {
 	if(root == null) return 0;
 
+	const sums = new Map<number, number[]>();
+	
+
 	let counter: number = 0;
-	let level: number = 0;
-	let levelSum: number[] = [];
-	let stack: TreeNode[] = [];
-	stack.push(root);
+	let stack: LeveledNode[] = [];
+	let visited: LeveledNode[] = [];
+	stack.push({node: root, level: 0});
+
 	while(stack.length > 0){
 		let current = stack.pop();
+		visited.push(current!);
+		console.log(`current level: ${current!.level}, current: ${current!.node.val}`);
+		let level = current!.level;
+		if(current!.node.right != null) stack.push({node: current!.node.right, level: level + 1})
+		if(current!.node.left != null) stack.push({node: current!.node.left, level: level + 1})
 
 	}
-	return 0;
+	return counter;
     
 };
 
